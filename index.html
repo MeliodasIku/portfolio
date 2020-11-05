@@ -7,30 +7,32 @@
 		<title>Portfolio Dorian Herelli</title>
 		<link rel="stylesheet" type="text/css" href="./css/main.css" />
 		<script src="javascript/index.js"></script>
+		<script
+			src="https://kit.fontawesome.com/c24fdb2ccf.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
+		<sky></sky>
+		<div class="a-header">
+			<input
+				type="checkbox"
+				name="main-nav"
+				id="main-nav"
+				class="burger-check"
+			/>
+			<label for="main-nav" class="burger menu"><span></span></label>
+			<ul>
+				<li><a href="#" onclick="hideMenu()">Accueil</a></li>
+				<li>
+					<a href="#monparcours" onclick="hideMenu()">Mon parcours</a>
+				</li>
+				<li><a href="#mesprojets" onclick="hideMenu()">Mes projets</a></li>
+				<li><a href="#contact" onclick="hideMenu()">Contact</a></li>
+			</ul>
+		</div>
 		<!-- Début du header -->
 		<div class="intro">
-			<div class="headmenu">
-				<header>
-					<nav>
-						<div class="head_ctnr">
-							<div id="logo_ctnr">
-								<a href="index.html">
-									<img id="logo" src="medias/images/monogram3.png" />
-								</a>
-							</div>
-							<div id="divhead">
-								<a href="index.html" class="nav_a">Accueil</a>
-								<a href="html/work.html" class="nav_a">Réalisations</a>
-								<a href="html/aboutme.html" class="nav_a">A propos</a>
-								<a href="contact.html" class="nav_a">Contact</a>
-							</div>
-						</div>
-					</nav>
-				</header>
-			</div>
-			<sky></sky>
 			<!-- Présentation info -->
 			<div class="prez">
 				<p id="dorian">&nbsp;</p>
@@ -42,108 +44,158 @@
 						<p id="webdesigner">Web designer</p>
 					</section>
 					<section>
-						<p id="portfolio">PORTFOLIO</p>
+						<div class="portfolioanim">
+							<p>PORTFOLIO</p>
+						</div>
 					</section>
 				</article>
 			</div>
 		</div>
-
-		<!-- The Timeline -->
-
-		<ul class="timeline">
-			<!-- Item 1 -->
-			<li>
-				<div class="direction-r">
-					<div class="flag-wrapper">
-						<span class="flag">Bachelor Web Design</span>
-						<span class="time-wrapper"
-							><span class="time">Sept. 2020 - ?? </span></span
-						>
-					</div>
-					<div class="desc">
-						Actuellement étudiant à l'ICAN après avoir repassé mon Baccalauréat
-						ES en candidat libre.
-					</div>
-				</div>
-			</li>
-
-			<!-- Item 2 -->
-			<li>
-				<div class="direction-l">
-					<div class="flag-wrapper">
-						<span class="flag">Entrepreneur</span>
-						<span class="time-wrapper"
-							><span class="time">Février 2020</span></span
-						>
-					</div>
-					<div class="desc">
-						Plusieurs création de projets, malheureusement certain n'ont pas
-						abouti suite au conjoncture.
-					</div>
-				</div>
-			</li>
-
-			<!-- Item 3 -->
-			<li>
-				<div class="direction-r">
-					<div class="flag-wrapper">
-						<span class="flag">Commercial</span>
-						<span class="time-wrapper"
-							><span class="time">Février 2019</span></span
-						>
-					</div>
-					<div class="desc">Contrat d'intérim de 4 mois.</div>
-				</div>
-			</li>
-
-			<!-- Item 4 -->
-			<li>
-				<div class="direction-l">
-					<div class="flag-wrapper">
-						<span class="flag">Responsable logistique</span>
-						<span class="time-wrapper"
-							><span class="time">Juin 2018</span></span
-						>
-					</div>
-					<div class="desc">Organisation et management d'équipe.</div>
-				</div>
-			</li>
-
-			<!-- Item 5 -->
-			<li>
-				<div class="direction-r">
-					<div class="flag-wrapper">
-						<span class="flag">Technico-Commercial</span>
-						<span class="time-wrapper"
-							><span class="time">Février 2018</span></span
-						>
-					</div>
-					<div class="desc">Ma première expérience professionnel.</div>
-				</div>
-			</li>
-		</ul>
-
-		<!-- Mes réalisations -->
-		<div class="global-ctnr">
-			<div class="project-ctnr">
-				<img src="../medias/s/papyroo.png" />
-				<h3>Papyroo</h3>
-				<div class="project-description">
-					<p class="project-description">
-						Illustration d'un personnage réalisé sous l'influence de
-						l'illustrateur "Papyroo"
-					</p>
-					<p>Logiciel utilisé : <strong>Illustrator</strong></p>
-				</div>
-				<div class="project-btn-ctnr">
-					<button class="btn-project">
-						<a href="" target="_blank"><i class=""></i></a>
-					</button>
-				</div>
+		<div id="background-wrap">
+			<div class="x1">
+				<div class="cloud"></div>
+			</div>
+			<div class="x2">
+				<div class="cloud"></div>
+			</div>
+			<div class="x3">
+				<div class="cloud"></div>
+			</div>
+			<div class="x4">
+				<div class="cloud"></div>
+			</div>
+			<div class="x5">
+				<div class="cloud"></div>
+			</div>
+			<div class="x6">
+				<div class="cloud"></div>
+			</div>
+			<div class="x7">
+				<div class="cloud"></div>
+			</div>
+			<div class="x8">
+				<div class="cloud"></div>
+			</div>
+			<div class="x9">
+				<div class="cloud"></div>
 			</div>
 		</div>
-		<footer>
-			<div class="footer_ctnr"></div>
-		</footer>
+		<div class="anchor" id="monparcours"></div>
+		<div class="monparcours">
+			<h1>Mon parcours</h1>
+		</div>
+		<hr class="linempc" />
+		<div class="monparcours2">
+			<img class="monparco" src="medias/images/monparcourss.svg" alt="" />
+		</div>
+		<!-- Mes réalisations -->
+		<div class="footerbackground">
+			<div class="mesprojets">
+				<div class="anchor" id="mesprojets"></div>
+				<h1 class="mesprojetss">Mes projets</h1>
+				<hr class="linempc" />
+			</div>
+			<div class="globalglobal">
+				<div class="global_ctnr">
+					<div class="project-ctnr">
+						<div class="project-img">
+							<img src="medias/images/papyroo.png" />
+						</div>
+						<div class="project-div">
+							<h3>Papyroo</h3>
+							<div class="project-description">
+								<p class="project-description">
+									Illustration d'un personnage réalisé sous l'influence de
+									l'illustrateur "Papyroo"
+								</p>
+								<p>Logiciel utilisé : <strong>Illustrator</strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="global_ctnr">
+					<div class="project-ctnr">
+						<div class="project-img">
+							<img src="medias/images/LogoTTK.png" />
+						</div>
+						<div class="project-div">
+							<h3>TATAKI eSport</h3>
+							<div class="project-description">
+								<p class="project-description">
+									Création de logo pour notre structure esportive, "Tataki
+									esport".
+								</p>
+								<p>Logiciel utilisé : <strong>Illustrator</strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="global_ctnr">
+					<div class="project-ctnr">
+						<div class="project-img">
+							<img src="medias/images/OCATOP.png" />
+						</div>
+						<div class="project-div">
+							<h3>OCATOP</h3>
+							<div class="project-description">
+								<p class="project-description">
+									Création de logo pour une société d'achat-revente automobile.
+								</p>
+								<p>Logiciel utilisé : <strong>Illustrator</strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="global_ctnr">
+					<div class="project-ctnr">
+						<div class="project-img">
+							<img src="medias/images/Somak USA.png" />
+						</div>
+						<div class="project-div">
+							<h3>SOMAK USA</h3>
+							<div class="project-description">
+								<p class="project-description">
+									Création de logo pour une société d'import-export américaine.
+								</p>
+								<p>Logiciel utilisé : <strong>Illustrator</strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="wrapper" id="contact">
+				<div>
+					<div class="mailto">
+						<i class="far fa-envelope mail-icon"></i
+						><a class="mailto" href="mailto:d.herelli.pro@gmail.com"
+							>d.herelli.pro@gmail.com</a
+						>
+					</div>
+					<ul class="social-icons icon-circle list-unstyled list-inline">
+						<li>
+							<a href="https://github.com/MeliodasIku" target="_blank">
+								<i class="fa fa-github"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+						</li>
+						<li>
+							<a
+								href="https://www.linkedin.com/in/dorian-herelli-57bb791b6/"
+								target="_blank"
+								><i class="fa fa-linkedin"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-youtube-play"></i></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>

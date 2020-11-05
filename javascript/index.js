@@ -1,8 +1,13 @@
 function getRandom(min, max) {
 	return Math.random() * (max - min) + min;
 }
+
+function hideMenu() {
+	document.getElementById("main-nav").checked = false;
+}
+
 document.addEventListener("DOMContentLoaded", function (event) {
-	const nbStar = 150;
+	const nbStar = 80;
 	const sky = document.querySelector("sky");
 	for (let i = 0; i < nbStar; i++) {
 		const star = document.createElement("star");
@@ -24,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				if (i == text.length && end) end();
 			}, ms + (i - 1) * ms);
 	}
-	showEveryXMs("#dorian", "Dorian", 200, () => {
-		showEveryXMs("#herelli", "Herelli", 200);
+	showEveryXMs("#dorian", "Dorian", 100, () => {
+		showEveryXMs("#herelli", "Herelli", 100);
 	});
 });
